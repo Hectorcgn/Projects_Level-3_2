@@ -22,16 +22,24 @@ body {
     height: 4509px;
     font-family: Roboto;   
 }
-/*header*/
+/*header*//*Navogationleiste*/
+.Nav-list {
+    margin-left: 100px;
+}
+
 .Nav-list li{
+    width: fit-content;
     display: inline-block;
+    margin-top: 20px;
+    margin-right: 22.28px;
+}
+.Nav-list li a{
+    text-decoration: none;
     color: #659D89;
     font-size: 14px;
-    text-align: start;
-    margin-right: 25px;
-    margin-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+}
+.Nav-list li a:hover{
+    color: #659d8991;
 }
 /*start main part*//*section 1*/
 .section1 {
@@ -42,10 +50,16 @@ body {
     
 }
 .section1 p {
-    color: #666666;
     font-size: 16px;
     padding-top: 78px;
     padding-bottom: 101px;
+}
+.section1 p a {
+    color: #666666;
+    text-decoration: none;
+}
+.section1 p a:hover{
+    color: #66666675;
 }
 .h2-green{
     color: #659D89;
@@ -70,7 +84,10 @@ ul {
     height: 20px;
 }
 
+.social-icons li a img:hover {
+    background-color: #0000002f;
 
+}
 /*section 2*/
 .section2 {
     padding-left: 100px;
@@ -103,6 +120,28 @@ h3 {
     padding-bottom: 52px;
 
 }
+/*macht su den img bewete bilder*/
+.section2-bild1 img:hover{
+    content: url('/assets/img/link1.gif');
+}
+.section2-bild2 img:hover{
+    content: url('/assets/img/link2.gif');
+}
+.section2-bild3 img:hover{
+    content: url('/assets/img/link3.gif');
+}
+.section2-bild4 img:hover{
+    content: url('/assets/img/link4.gif');
+}
+.section2-bild5 img:hover{
+    content: url('/assets/img/link5.gif');
+}
+.section2-bild6 img:hover{
+    content: url('/assets/img/link6.gif');
+}
+
+
+/*section3*/
 .section3{
     padding-left: 100px;
     padding-right: 100px;
@@ -115,16 +154,33 @@ h3 {
 .section3 p {
     font-size: 20px;
 }
+
+/*alle bilder bekommen die gleiche größe*/
+.article1,.article2,.article3,.article4 img {
+    width: 756px;
+    height: 425.25px;
+}
+/*erzeutdie die Schatten bei den Bilder*/
+.article1 img:hover{
+    box-shadow: 0px 0px 10px 5px #000000;
+}
+.article2 img:hover{
+    box-shadow: 0px 0px 10px 5px #666666ad;
+}
+.article3 img:hover{
+    box-shadow: 0px 0px 10px 5px #666666ad;
+}
+.article4 img:hover{
+    box-shadow: 0px 0px 10px 5px #666666ad;
+}
+/*1. und 3. bild sowie auch die texte darunter bekommen die gleiche eigenschaften*/
 .article1 ,.article3 {
     margin-left: 80px;
     margin-bottom: 100px;
     width: fit-content;
     text-align: center;
 }
-.article1,.article2,.article3,.article4 img {
-    width: 756px;
-    height: 425.25px;
-}
+/*2. und 4. bild sowie auch die texte darunter bekommen die gleiche eigenschaften*/
 .article2 ,.article4{
     margin-left: 404px;
     margin-bottom: 100px;
@@ -144,11 +200,16 @@ footer {
     text-align: center;
     list-style: none;
 }
-footer p:nth-of-type(1) {
+footer a {
     color: #666666;
     font-size: 20px;
+    text-decoration: none;
 }
-footer p:nth-of-type(2) {
+footer a:hover {
+    color: #66666679;
+}
+
+footer p {
     color: #666666;
     margin-top: 83px;
     font-size: 10px;
